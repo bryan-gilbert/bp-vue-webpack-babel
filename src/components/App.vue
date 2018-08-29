@@ -20,7 +20,7 @@ export default {
 <style lang="scss">
 @import '~normalize.css';
 @import '~reset-css/_reset.scss';
-
+@import '~purecss/build/pure.css';
 * {
   box-sizing: border-box;
 }

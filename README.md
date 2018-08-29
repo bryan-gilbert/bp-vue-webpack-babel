@@ -19,7 +19,9 @@ npm run build
 npm run serve:production
 ```
 ## Initial install
-
+The project file ```install.sh``` contains the intial npm install commands that created the package.json file.
+This file is useful if you wish to reset the package.json file to all the latest versions of the bundles.
+Just run install.sh and test that the project still works.
 
 
 ## About
