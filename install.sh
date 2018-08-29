@@ -21,7 +21,8 @@ npm install --save-dev webpack-serve opn
 npm install --save-dev express
 
 npm install vue vue-router
+
+npm install normalize.css
 #Don't take reset-css v4 yet
-# npm install normalize.css
-# npm install reset-css@^3.0.0
+npm install reset-css@^3.0.0
 npm install purecss

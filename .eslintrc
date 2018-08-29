@@ -9,7 +9,7 @@
     "sourceType": "module"
   },
   "extends": [
-    "@avalanche/eslint-config",
+    "eslint:recommended",
     "plugin:vue/recommended"
   ],
   "rules": {

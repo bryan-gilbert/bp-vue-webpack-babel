@@ -26,6 +26,12 @@ export default {
 }
 
 html body {
+  // https://medium.com/@vojtechjurasek/how-we-decided-to-use-system-fonts-87683b9b23ba
+  // Use system fonts for speed
+  // BlinkMacSystemFont is Apple's iOS font
+  // Segoe UI is Windows
+  // Roboto is android
+  // default to other system fonts
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 </style>
