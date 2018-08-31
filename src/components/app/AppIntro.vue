@@ -1,5 +1,6 @@
 <template>
   <div :class="$options.name">
+    AppINTRO
     <slot/>
   </div>
 </template>

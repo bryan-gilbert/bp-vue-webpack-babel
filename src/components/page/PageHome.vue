@@ -2,7 +2,7 @@
   <div :class="$options.name">
     <app-hero :action="{ to: { name: `article` }, label: `Click me!` }">
       <template slot="headline">
-        Welcome!
+        Home page Vue App
       </template>
 
       <p>
