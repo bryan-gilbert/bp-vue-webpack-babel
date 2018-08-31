@@ -1,10 +1,14 @@
 <template>
   <footer :class="$options.name">
     <div :class="`${$options.name}__wrapper`">
-      &copy; Markus Oberlehner -
+
       <app-link :to="{ name: `home` }">Home</app-link>
       |
       <app-link :to="{ name: `article` }">Article</app-link>
+      |
+      <app-link :to="{ name: `dev` }">Dev</app-link>
+      |
+      <app-link :to="{ name: `blog` }">Blog</app-link>
       |
       <app-link :to="{ name: `list` }">List</app-link>
     </div>

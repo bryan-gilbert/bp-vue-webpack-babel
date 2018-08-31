@@ -30,4 +30,4 @@ Just run install.sh and test that the project still works.
 
 ### License
 
-MIT
+MIT  See LICENSE.txt

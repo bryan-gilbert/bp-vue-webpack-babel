@@ -23,6 +23,18 @@
           </li>
           <li :class="`${$options.name}__navItem`">
             <router-link
+                  :to="{ name: `dev` }"
+                  :class="`${$options.name}__navLink`"
+                  exact-active-class="is-active">Dev</router-link>
+          </li>
+          <li :class="`${$options.name}__navItem`">
+            <router-link
+                  :to="{ name: `blog` }"
+                  :class="`${$options.name}__navLink`"
+                  exact-active-class="is-active">Blog</router-link>
+          </li>
+          <li :class="`${$options.name}__navItem`">
+            <router-link
               :to="{ name: `list` }"
               :class="`${$options.name}__navLink`"
               exact-active-class="is-active">List</router-link>
