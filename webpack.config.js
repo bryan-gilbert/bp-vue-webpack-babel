@@ -3,7 +3,7 @@
 const { VueLoaderPlugin } = require(`vue-loader`);
 const nodeSassMagicImporter = require(`node-sass-magic-importer`);
 const path = require(`path`);
-
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require(`html-webpack-plugin`);
 const MiniCssExtractPlugin = require(`mini-css-extract-plugin`);
 const OptimizeCSSAssetsPlugin = require(`optimize-css-assets-webpack-plugin`);
@@ -61,6 +61,7 @@ const config = {
 	},
 	plugins: [
 		new VueLoaderPlugin(),
+		new webpack.HotModuleReplacementPlugin(),
 		new HtmlWebpackPlugin({
 			filename: path.join(__dirname, `dist`, `index.html`),
 			template: path.join(__dirname, `static`, `index.html`),
@@ -74,6 +75,9 @@ const config = {
 			} : false,
 		}),
 	],
+	performance: {
+		hints: process.env.NODE_ENV === 'production' ? "warning" : false
+	},
 };
 
 if (minify) {

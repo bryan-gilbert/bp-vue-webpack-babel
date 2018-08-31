@@ -3,6 +3,7 @@
 
 #Installs webpack 4.x | babel-loader 8.x | babel 7.x
 npm install --save-dev webpack webpack-cli html-webpack-plugin
+npm install --save-dev webpack-dev-server
 npm install --save-dev babel-loader @babel/core @babel/preset-env @babel/plugin-syntax-dynamic-import
 npm install --save-dev cross-env
 npm install --save-dev vue-loader vue-template-compiler
