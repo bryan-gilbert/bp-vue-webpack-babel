@@ -1,27 +1,34 @@
 <template>
-  <div :class="$options.name">
+  <div :class="$options.name" >
     <app-hero>
       <template slot="headline">
         Dev
       </template>
     </app-hero>
-<money-converter>
-
-</money-converter>
+    <ui-button v-on:buttonClicked="appButtonClicked($event)">Click App Button</ui-button>
+    <money-converter>
+    </money-converter>
 
   </div>
 </template>
 
 <script>
 import MoneyConverter from '../currencyConverter/MoneyConverter.vue';
+import UiButton from '../ui/UiButton.vue';
 import AppHero from '../app/AppHero.vue';
 
 export default {
   name: `PageDev`,
   components: {
     AppHero,
-		MoneyConverter
+		MoneyConverter,
+		UiButton
   },
+	methods: {
+		appButtonClicked: function (eventData) {
+			console.log("handle devButtonClicked eventData");
+		}
+	}
 };
 </script>
 

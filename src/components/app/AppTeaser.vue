@@ -4,30 +4,30 @@
       <slot name="headline"/>
     </app-headline>
 
-    <app-text :class="`${$options.name}__text`">
+    <ui-text :class="`${$options.name}__text`">
       <slot/>
-    </app-text>
+    </ui-text>
 
-    <app-button
+    <ui-button
       v-if="action"
       :to="action.to"
       :class="`${$options.name}__action`">
       {{ action.label }}
-    </app-button>
+    </ui-button>
   </div>
 </template>
 
 <script>
-import AppButton from './AppButton.vue';
+import UiButton from '../ui/UiButton.vue';
 import AppHeadline from './AppHeadline.vue';
-import AppText from './AppText.vue';
+import UiText from '../ui/UiText.vue';
 
 export default {
   name: `AppTeaser`,
   components: {
-    AppButton,
+		UiButton,
     AppHeadline,
-    AppText,
+    UiText,
   },
   props: {
     action: {

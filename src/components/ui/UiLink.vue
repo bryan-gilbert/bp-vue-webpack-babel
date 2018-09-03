@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: `AppLink`,
+  name: `UiLink`,
   props: {
     to: {
       type: Object,
@@ -18,7 +18,7 @@ export default {
 <style lang="scss" scoped>
 @import '../../scss/settings/color';
 
-.AppLink {
+.UiLink {
   text-decoration: underline;
 
   &,

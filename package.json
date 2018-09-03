@@ -42,6 +42,7 @@
     "webpack-serve": "^2.0.2"
   },
   "dependencies": {
+    "bulma": "^0.7.1",
     "normalize.css": "^8.0.0",
     "purecss": "^1.0.0",
     "reset-css": "^3.0.0",

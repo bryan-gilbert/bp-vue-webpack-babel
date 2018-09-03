@@ -4,30 +4,30 @@
       <slot name="headline"/>
     </app-headline>
 
-    <app-intro :class="`${$options.name}__intro`">
+    <ui-intro :class="`${$options.name}__intro`">
       <slot/>
-    </app-intro>
+    </ui-intro>
 
-    <app-button
+    <ui-button
       v-if="action"
       :to="action.to"
       :class="`${$options.name}__action`">
       {{ action.label }}
-    </app-button>
+    </ui-button>
   </div>
 </template>
 
 <script>
-import AppButton from './AppButton.vue';
+import UiButton from '../ui/UiButton.vue';
 import AppHeadline from './AppHeadline.vue';
-import AppIntro from './AppIntro.vue';
+import UiIntro from '../ui/UiIntro.vue';
 
 export default {
   name: `AppHero`,
   components: {
-    AppButton,
+		UiButton,
     AppHeadline,
-    AppIntro,
+    UiIntro,
   },
   props: {
     action: {

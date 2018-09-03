@@ -6,12 +6,12 @@
 
 <script>
 export default {
-  name: `AppIntro`,
+  name: `UiIntro`,
 };
 </script>
 
 <style lang="scss" scoped>
-.AppIntro {
+.UiIntro {
   font-size: 1.25em;
 
   > :not(:first-child) {

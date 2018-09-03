@@ -2,18 +2,18 @@
   <div :class="$options.name">
     <app-headline>Article</app-headline>
 
-    <app-intro :class="`${$options.name}__intro`">
+    <ui-intro :class="`${$options.name}__intro`">
       <p>
         LOREM ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
         eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
         voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
         clita kasd gubergren.
       </p>
-    </app-intro>
+    </ui-intro>
 
-    <app-text :class="`${$options.name}__text`">
+    <ui-text :class="`${$options.name}__text`">
       <p>
-        app-text Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+        ui-text Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
         eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
         voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
         clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
@@ -53,21 +53,21 @@
         Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
         sit amet.
       </p>
-    </app-text>
+    </ui-text>
   </div>
 </template>
 
 <script>
 import AppHeadline from '../app/AppHeadline.vue';
-import AppIntro from '../app/AppIntro.vue';
-import AppText from '../app/AppText.vue';
+import UiIntro from '../ui/UiIntro.vue';
+import UiText from '../ui/UiText.vue';
 
 export default {
   name: `PageArticle`,
   components: {
     AppHeadline,
-    AppIntro,
-    AppText,
+    UiIntro,
+    UiText,
   },
 };
 </script>

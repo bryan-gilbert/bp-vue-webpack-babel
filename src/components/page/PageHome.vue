@@ -6,8 +6,8 @@
       </template>
 
       <p>
-        Lorem ipsum dolor sit amet, <app-link :to="{ name: `list` }">
-        consetetur</app-link> adipscing elitr, sed diam nonumy eirmod tempor
+        Lorem ipsum dolor sit amet, <ui-link :to="{ name: `list` }">
+        consetetur</ui-link> adipscing elitr, sed diam nonumy eirmod tempor
         invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
       </p>
     </app-hero>
@@ -51,7 +51,7 @@
 
 <script>
 import AppHero from '../app/AppHero.vue';
-import AppLink from '../app/AppLink.vue';
+import UiLink from '../ui/UiLink.vue';
 import AppTeaser from '../app/AppTeaser.vue';
 import AppTeaserList from '../app/AppTeaserList.vue';
 import AppTeaserListItem from '../app/AppTeaserListItem.vue';
@@ -60,7 +60,7 @@ export default {
   name: `PageHome`,
   components: {
     AppHero,
-    AppLink,
+    UiLink,
     AppTeaser,
     AppTeaserList,
     AppTeaserListItem,

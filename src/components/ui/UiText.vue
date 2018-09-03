@@ -6,12 +6,12 @@
 
 <script>
 export default {
-  name: `AppText`,
+  name: `UiText`,
 };
 </script>
 
 <style lang="scss" scoped>
-.AppText {
+.UiText {
   > :not(:first-child) {
     margin-top: 1.25em;
   }

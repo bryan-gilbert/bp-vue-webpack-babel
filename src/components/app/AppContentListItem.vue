@@ -8,31 +8,30 @@
         <app-headline :level="3">
           <slot name="headline"/>
         </app-headline>
-        <app-text :level="3" :class="`${$options.name}__text`">
+        <ui-text :level="3" :class="`${$options.name}__text`">
           <slot/>
-        </app-text>
+        </ui-text>
       </div>
       <div :class="`${$options.name}__actions`">
-        <slot name="actions">
-          <app-button>Buy me!</app-button>
-        </slot>
+        <slot name="actions"/>
       </div>
     </div>
   </li>
 </template>
 
 <script>
-import AppButton from './AppButton.vue';
 import AppHeadline from './AppHeadline.vue';
-import AppText from './AppText.vue';
+import UiText from '../ui/UiText.vue';
 
 export default {
   name: `AppContentListItem`,
   components: {
-    AppButton,
     AppHeadline,
-    AppText,
+    UiText,
   },
+	props: {
+		contentItemKey: String,
+	}
 };
 </script>
 

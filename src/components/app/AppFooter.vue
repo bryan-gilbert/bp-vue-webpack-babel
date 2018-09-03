@@ -2,26 +2,26 @@
   <footer :class="$options.name">
     <div :class="`${$options.name}__wrapper`">
 
-      <app-link :to="{ name: `home` }">Home</app-link>
+      <ui-link :to="{ name: `home` }">Home</ui-link>
       |
-      <app-link :to="{ name: `article` }">Article</app-link>
+      <ui-link :to="{ name: `article` }">Article</ui-link>
       |
-      <app-link :to="{ name: `dev` }">Dev</app-link>
+      <ui-link :to="{ name: `dev` }">Dev</ui-link>
       |
-      <app-link :to="{ name: `blog` }">Blog</app-link>
+      <ui-link :to="{ name: `blog` }">Blog</ui-link>
       |
-      <app-link :to="{ name: `list` }">List</app-link>
+      <ui-link :to="{ name: `list` }">List</ui-link>
     </div>
   </footer>
 </template>
 
 <script>
-import AppLink from './AppLink.vue'
+import UiLink from '../ui/UiLink.vue'
 
 export default {
   name: `AppFooter`,
   components: {
-    AppLink,
+    UiLink,
   },
 };
 </script>
