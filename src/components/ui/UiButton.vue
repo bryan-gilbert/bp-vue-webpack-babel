@@ -4,11 +4,11 @@
   make the button into a Vue router-link component https://router.vuejs.org/api/
   otherwise leave the button as a button.  The :to attribute is used by the router-link, if it's there.
   -->
-  <button is-primary
+  <button
     :is="to ? `router-link` : `button`"
     :to="to"
     v-on:click="buttonClicked"
-          class="button"
+          class="classObject"
     :class="$options.name">
     <slot/>
   </button>
@@ -22,6 +22,13 @@ export default {
       type: Object,
     },
   },
+	computed: {
+		classObject: function () {
+			return {
+				"is-link": this.to !== undefined
+			}
+		}
+	},
 	methods: {
 		buttonClicked: function () {
         this.$emit('buttonClicked');
@@ -33,7 +40,10 @@ export default {
 <style lang="scss" scoped>
 @import '../../scss/settings/color';
 
-.UiButton-orig {
+.UiButton {
+
+}
+.UiButton-orig{
   display: inline-block;
   padding: 0.5em 0.75em;
   border: none;
