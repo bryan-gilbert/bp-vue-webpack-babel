@@ -8,8 +8,8 @@
     :is="to ? `router-link` : `button`"
     :to="to"
     v-on:click="buttonClicked"
-          class="classObject"
-    :class="$options.name">
+    v-bind:class="classObject"
+    >
     <slot/>
   </button>
 </template>
@@ -25,7 +25,9 @@ export default {
 	computed: {
 		classObject: function () {
 			return {
-				"is-link": this.to !== undefined
+				"is-link": this.to !== undefined,
+        "is-primary": this.to == undefined,
+        "button" : true
 			}
 		}
 	},
