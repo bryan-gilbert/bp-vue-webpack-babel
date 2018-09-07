@@ -1,5 +1,5 @@
 <template>
-  <router-link :to="to" :class="$options.name">
+  <router-link :to="to" class="classObject" :class="$options.name">
     <slot/>
   </router-link>
 </template>
@@ -12,23 +12,15 @@ export default {
       type: Object,
     },
   },
+	computed: {
+		classObject: function () {
+			return {
+				"is-link": true
+			}
+		}
+	},
 };
 </script>
 
 <style lang="scss" scoped>
-@import '../../scss/settings/color';
-
-.UiLink {
-  text-decoration: underline;
-
-  &,
-  &:visited {
-    color: $color-primary;
-  }
-
-  &:focus,
-  &:hover {
-    text-decoration: none;
-  }
-}
 </style>

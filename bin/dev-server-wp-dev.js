@@ -12,21 +12,13 @@ const options = {
 		index: 'index.html'
 	}
 };
-/*
-	devServer: {
-		contentBase: './dist',
-		hot: true,
-		historyApiFallback: {
-			index: 'index.html'
-		}
-	},
- */
+
 webpackDevServer.addDevServerEntrypoints(config, options);
 const compiler = webpack(config);
 const server = new webpackDevServer(compiler, options);
 
-server.listen(options.port, 'localhost', () => {
-	console.log('dev server listening on port 5000 ', options);
+server.listen(options.port, options.host, () => {
+	console.log('dev server listening on port  ', options.port, options);
 	openBrowser(`http://${options.host}:${options.port}`);
 
 });

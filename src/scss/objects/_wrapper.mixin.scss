@@ -1,9 +1,9 @@
 $o-wrapper-sizes: (
-  s: 152em,
-  m: 42em,
+  wide:   82em,
+  narrow: 42em,
 );
 
-@mixin wrapper($size: m) {
+@mixin wrapper($size: narrow) {
   margin-right: auto;
   margin-left: auto;
   padding-right: 1em;

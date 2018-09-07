@@ -9,7 +9,7 @@ const MiniCssExtractPlugin = require(`mini-css-extract-plugin`);
 const OptimizeCSSAssetsPlugin = require(`optimize-css-assets-webpack-plugin`);
 const UglifyJsPlugin = require(`uglifyjs-webpack-plugin`);
 
-const env = process.env.NODE_ENV;
+const env = process.env.NODE_ENV || 'development';
 const minify = env === `production`;
 const sourceMap = env === `development`;
 

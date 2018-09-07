@@ -30,10 +30,7 @@ export default {
 
 .LayoutDefault {
   &__main {
-    @include wrapper();
-
-    padding-top: 3em;
-    padding-bottom: 4em;
+    @include wrapper('wide');
   }
 }
 </style>
