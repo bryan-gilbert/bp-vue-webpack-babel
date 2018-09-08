@@ -23,6 +23,8 @@ The project file ```install.sh``` contains the intial npm install commands that 
 This file is useful if you wish to reset the package.json file to all the latest versions of the bundles.
 Just run install.sh and test that the project still works.
 
+## References
+To setup Bulma and Vue and CSS generation [https://bulma.io/documentation/customize/with-node-sass/]
 
 ## About
 
