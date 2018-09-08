@@ -1,5 +1,5 @@
 <template>
-  <router-link :to="to" class="classObject" :class="$options.name">
+  <router-link :to="to" class="is-link">
     <slot/>
   </router-link>
 </template>
@@ -12,13 +12,7 @@ export default {
       type: Object,
     },
   },
-	computed: {
-		classObject: function () {
-			return {
-				"is-link": true
-			}
-		}
-	},
+
 };
 </script>
 
